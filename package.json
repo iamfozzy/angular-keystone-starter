@@ -1,0 +1,41 @@
+{
+  "name": "keystone-angular-starter",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "angular": "1.*",
+    "angular-ui-router-title": "0.0.4",
+    "autoprefixer-loader": "^3.1.0",
+    "babel": "^6.3.26",
+    "babel-core": "^6.1.4",
+    "babel-loader": "^6.1.0",
+    "babel-preset-es2015": "^6.1.4",
+    "babel-register": "^6.4.3",
+    "css-loader": "^0.23.1",
+    "exports-loader": "^0.6.2",
+    "expose-loader": "^0.7.1",
+    "file-loader": "^0.8.4",
+    "html-loader": "^0.3.0",
+    "json-loader": "^0.5.3",
+    "keystone": "^0.3.16",
+    "lodash": "^4.*",
+    "mongoose": "^3.8.23",
+    "ng-annotate-loader": "0.0.10",
+    "node-sass": "^3.*",
+    "parallelshell": "^2.0.0",
+    "restful-keystone": "^0.3.0",
+    "sass-loader": "^3.1.1",
+    "style-loader": "^0.13.0",
+    "ui-router": "^0.2.15",
+    "webpack": "^1.12.4",
+    "webpack-dev-server": "^1.12.1"
+  },
+  "engines": {
+    "node": "5.*"
+  },
+  "scripts": {
+    "watch": "webpack --watch",
+    "server": "node server/index.js",
+    "dev": "parallelshell \"npm run watch\" \"npm run server\""
+  }
+}
