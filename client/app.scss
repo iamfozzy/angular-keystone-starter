@@ -1,0 +1,11 @@
+#fm-loading {
+  transition: opacity 1s ease-out;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+#fm-loading.active {
+  opacity: 1;
+  height: auto;
+}
