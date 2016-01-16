@@ -1,5 +1,5 @@
 import indexView from './views/index'
-import RestfulRouter from '../classes/RestfulRouter';
+import RestfulRouter from '../lib/RestfulRouter';
 
 var keystone = require('keystone');
 var middleware = require('./middleware');

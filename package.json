@@ -35,7 +35,7 @@
   },
   "scripts": {
     "watch": "webpack --watch",
-    "server": "node server/index.js",
+    "server": "node web.js",
     "dev": "parallelshell \"npm run watch\" \"npm run server\""
   }
 }

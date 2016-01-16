@@ -1,6 +1,6 @@
 var path              = require('path'),
-    libPath           = path.join(__dirname, 'client'),
-    wwwPath           = path.join(__dirname, 'server/public'),
+    libPath           = path.join(__dirname, 'www/app'),
+    wwwPath           = path.join(__dirname, 'www/public'),
     pkg               = require('./package.json'),
     webpack           = require("webpack");
 
