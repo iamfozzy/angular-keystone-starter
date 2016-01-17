@@ -1,4 +1,13 @@
-extends ../layouts/app
+doctype html
+html(ng-app='app')
+    head
+        meta(charset="utf-8")
+        meta(name="viewport", content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width")
 
-block content
-    ui-view
+        title(ng-bind="(title || 'Keystone Angular Starter')")
+        link(rel="shortcut icon", href="/favicon.ico", type="image/x-icon")
+
+    body
+        app
+
+    script(src="/app.js")
