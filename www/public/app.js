@@ -47,7 +47,7 @@
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
-	    value: true
+	  value: true
 	});
 	
 	__webpack_require__(1);

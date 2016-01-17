@@ -17,7 +17,9 @@ keystone.init({
   'favicon': 'www/public/favicon.ico',
   'static': 'www/public',
 
-  'views': 'templates/views',
+  'updates': 'keystone/updates',
+
+  'views': 'keystone/templates/views',
   'view engine': 'jade',
 
   'auto update': true,
@@ -28,7 +30,7 @@ keystone.init({
   'cookie secret': '349fj[qG%^KW23554HK8jh3qp38947jfj'
 });
 
-keystone.import('models');
+keystone.import('keystone/models');
 
 // Set us up some default locals
 keystone.set('locals', {
@@ -41,7 +43,7 @@ keystone.set('locals', {
 });
 
 // Import routes
-keystone.set('routes', require('./routes'));
+keystone.set('routes', require('./keystone/routes'));
 
 // Update the admin ui nav
 keystone.set('nav', {

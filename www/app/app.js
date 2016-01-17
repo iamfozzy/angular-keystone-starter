@@ -10,9 +10,9 @@ import './app.scss';
 import modCommon from './common/common.module';
 
 let mod = angular.module('app', [
-    'app.common',
-    'ui.router',
-    'ui.router.title'
+  'app.common',
+  'ui.router',
+  'ui.router.title'
 ]);
 
 export default mod = mod.name;
