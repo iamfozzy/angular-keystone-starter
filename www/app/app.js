@@ -1,9 +1,13 @@
 // External includes
-import 'jquery';
+//import 'jquery';
 import 'angular';
 import 'ui-router';
 import 'angular-ui-router-title';
 import 'angular-component';
+
+// Semantic
+import '../semantic/dist/semantic.min.js';
+import '../semantic/dist/semantic.min.css';
 
 // Modules
 import modCommon from './common/common.module';

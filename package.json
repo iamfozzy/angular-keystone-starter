@@ -27,6 +27,7 @@
     "parallelshell": "^2.0.0",
     "restful-keystone": "^0.3.0",
     "sass-loader": "^3.1.1",
+    "semantic-ui": "^2.1.8",
     "style-loader": "^0.13.0",
     "ui-router": "^0.2.15",
     "webpack": "^1.12.4",
