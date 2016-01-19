@@ -39,6 +39,7 @@
   "scripts": {
     "watch": "webpack --watch",
     "server": "node index.js",
-    "dev": "parallelshell \"npm run watch\" \"npm run server\""
+    "dev": "parallelshell \"npm run watch\" \"npm run server\"",
+    "prod": "npm run webpack --config webpack.config.prod.js"
   }
 }

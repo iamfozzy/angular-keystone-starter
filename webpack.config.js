@@ -31,7 +31,10 @@ module.exports = {
         loader: "json"
       }, {
         test: /\.(png|jpg|svg|gif|eot|ttf|woff|woff2|otf)$/,
-        loader: 'file?name=[path][name].[ext]'
+        loader: 'file?name=images/[hash].[ext]'
+      }, {
+        test: /\.(eot|ttf|woff|woff2|otf)$/,
+        loader: 'file?name=fonts/[hash].[ext]'
       }, {
         test: /\.css$/,
         loader: "style!css"
@@ -59,6 +62,10 @@ module.exports = {
     new webpack.ProvidePlugin({
       $: "jquery",
       jQuery: "jquery"
-    })
+    }),
+
+    new webpack.optimize.OccurenceOrderPlugin(),
+    new webpack.optimize.DedupePlugin(),
+    new webpack.optimize.UglifyJsPlugin()
   ]
 };
