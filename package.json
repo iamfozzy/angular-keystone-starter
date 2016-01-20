@@ -13,10 +13,11 @@
     "babel-register": "^6.4.3",
     "jquery": "^2.2.0",
     "keystone": "^0.3.16",
+    "less-loader": "^2.2.2",
     "lodash": "^4.*",
     "mongoose": "^3.8.23",
     "node-sass": "^3.*",
-    "restful-keystone": "^0.3.0",
+    "restful-keystone": "github:stuartforster/restful-keystone",
     "ui-router": "^0.2.15"
   },
   "devDependencies": {

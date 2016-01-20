@@ -1,17 +1,17 @@
 module.exports = {
     User: {
-        methods: ['create', 'list', 'retrieve', 'update', 'remove'],
+        methods: ['list', 'retrieve'],
         show: ['name', 'email'],
         edit: ['name']
     },
     Post: {
-        methods: ['create', 'list', 'retrieve', 'update', 'remove'],
+        methods: ['list', 'retrieve'],
         filter: {
             state: "published"
         },
         populate: [{
             path: 'author',
-            select: 'name email'
+            select: 'name'
         }, {
             path: 'categories',
             select: 'name'

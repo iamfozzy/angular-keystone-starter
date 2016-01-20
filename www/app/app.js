@@ -24,6 +24,12 @@ let mod = angular.module('app', [
   'ui.router.title'
 ]);
 
+mod.run(($rootScope)=> {
+  'ngInject';
+
+  $rootScope.title = 'Stuart Forster - Fozzy Media | Full Stack Developer';
+});
+
 // app is not prefixed here - but you should prefix yours (don't forget to change the main template index.jade)
 mod.component('app', appComponent);
 
