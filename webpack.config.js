@@ -18,8 +18,8 @@ module.exports = {
         loader: 'expose?angular!exports?window.angular'
       },
       {
-        test: /[\/]jquery\.js$/,
-        loader: 'expose?jQuery'
+        test: /[\/]jquery$/,
+        loader: 'expose?jQuery!exports?window.jQuery'
       }, {
         test: /[\/]lodash\.js$/,
         loader: 'expose?_'
@@ -30,7 +30,7 @@ module.exports = {
         test: /\.json$/,
         loader: "json"
       }, {
-        test: /\.(png|jpg|svg|gif|eot|ttf|woff|woff2|otf)$/,
+        test: /\.(png|jpg|svg|gif)$/,
         loader: 'file?name=images/[hash].[ext]'
       }, {
         test: /\.(eot|ttf|woff|woff2|otf)$/,
@@ -61,11 +61,7 @@ module.exports = {
   plugins: [
     new webpack.ProvidePlugin({
       $: "jquery",
-      jQuery: "jquery"
-    }),
-
-    new webpack.optimize.OccurenceOrderPlugin(),
-    new webpack.optimize.DedupePlugin(),
-    new webpack.optimize.UglifyJsPlugin()
+      jQuery: 'jquery'
+    })
   ]
 };

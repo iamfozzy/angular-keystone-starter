@@ -1,5 +1,5 @@
 // External includes
-//import 'jquery';
+import 'jquery';
 import 'angular';
 import 'ui-router';
 import 'angular-ui-router-title';
